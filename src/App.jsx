@@ -15,7 +15,7 @@ function App() {
         </h1>
       </div>
       <Box sx={{ display:"flex",  justifyContent: "center", /* Centrar horizontalmente */
-  alignItems: "center",flexDirection:"column",width:"100vh",paddingTop:"20%"}}>
+  alignItems: "center",flexDirection:"column",width:"100vh"}}>
         <Box
               width="50%"
               component="img"
@@ -37,9 +37,9 @@ function App() {
             src="/equidad1.png"
             width="100%"
             height="100%"
-            sx={{paddingTop:"20%"}}
+            sx={{}}
           />
-          <a href="https://twitter.com/intent/tweet?text=No%20pagues%20tu%20cae%20enterate%20aqui%20&url=http%3A%2F%2Fequidadlegal.cl&hashtags=programación,html" target="_blank"><h1 className='prescribelaw'>#PRESCRIBELAW</h1></a>
+          <a href="https://twitter.com/intent/tweet?text=No%20pagues%20tu%20cae%20enterate%20aqui%20&url=http%3A%2F%2Fequidadlegal.cl&hashtags=programación,html" target="_blank"><h1 translate="no" className='prescribelaw'>#PRESCRIBELAW</h1></a>
                   
           <Box sx={{paddingTop:"20%",position:"fixed",display:"flex",flexDirection:"column",justifyContent:"space-between"}}>
             <Box
@@ -51,7 +51,7 @@ function App() {
              <Box
               component="img"
               width="20%"
-              src="/ig.png"
+              src="/public/ig.png"
               sx={{marginLeft: "auto"}}
               onClick={()=>{redirigir()}}
             />

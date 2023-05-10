@@ -3,6 +3,7 @@
   max-width: 100%;
   margin: 0;
   padding: 0;
+  max-height: 100vh;
 }
 .navbar{
   display: flex;
@@ -25,7 +26,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content:space-between;
   align-items: center;
   height: 100%;
 }
