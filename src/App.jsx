@@ -19,7 +19,7 @@ function App() {
         <Box
               width="50%"
               component="img"
-              src="./public/30.png"
+              src="../public/30.png"
               sx={{
                 animation: 'rotate 2s linear infinite',
               '@keyframes rotate': {
@@ -34,7 +34,7 @@ function App() {
       </Box>
         <Box
             component="img"
-            src="./public/equidad1.png"
+            src="../public/equidad1.png"
             width="100%"
             height="100%"
             sx={{paddingTop:"20%"}}
@@ -44,14 +44,14 @@ function App() {
           <Box sx={{paddingTop:"20%",position:"fixed",display:"flex",flexDirection:"column",justifyContent:"space-between"}}>
             <Box
               component="img"
-              src="./public/wsp.png"
+              src="../public/wsp.png"
               width="20%"
               sx={{marginLeft: "auto"}}
             />
              <Box
               component="img"
               width="20%"
-              src="./public/ig.png"
+              src="../public/ig.png"
               sx={{marginLeft: "auto"}}
               onClick={()=>{redirigir()}}
             />
