@@ -5,6 +5,10 @@
   padding: 0;
   max-height: 100vh;
 }
+@font-face {
+  font-family: 'MyFont';
+  src: url('/fonts/big_noodle_titling_oblique.ttf');
+}
 .navbar{
   display: flex;
   background-color: #046c9c;
@@ -18,11 +22,10 @@
   position: relative;
 }
 .titulo {
-  color:white;
-  font-size: 7vw;
-  white-space: nowrap;
+  color:#333333;
+  font-size: 5vw;
   text-align: center;
-  font-family: 'Saira Condensed';
+  font-family: 'MyFont';
   white-space: nowrap;
 }
 .container{
@@ -32,12 +35,14 @@
   flex-direction: column;
   justify-content:space-between;
   align-items: center;
+  position: relative;
 }
 .prescribelaw{
-  font-family: 'Saira Condensed';
+  font-family: 'MyFont';
   width: 100vw;
   text-align: center;
   padding-top: 20%;
+  color:#333333
 }
 a{
   color: black;

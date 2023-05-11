@@ -14,7 +14,7 @@ function App() {
         JUSTICIA AL ALCANCE DE TOD@S
         </h1>
       </div>
-      <Box sx={{ display:"flex",  justifyContent: "center", /* Centrar horizontalmente */
+      <Box sx={{ display:"flex",  justifyContent: "center",paddingTop:"8vh", /* Centrar horizontalmente */
   alignItems: "center",flexDirection:"column",width:"100vh"}}>
         <Box
               width="50%"
