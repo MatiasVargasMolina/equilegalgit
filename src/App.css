@@ -78,10 +78,10 @@
   font-family: 'MiFuente1';
   width: 100%;
   text-align: center;
+  font-size: 3rem;
   color:#333333;
   animation: cambia-color 5s linear infinite;
   text-decoration: none;
-  animation: zoom 0.2s ease-out;
 }
 a{
   color: black;
