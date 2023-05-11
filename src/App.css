@@ -23,12 +23,12 @@
   font-family: 'Saira Condensed';
 }
 .container{
-  width: 100vw;
+  padding: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
   align-items: center;
-  height: 100%;
 }
 .prescribelaw{
   font-family: 'Saira Condensed';
