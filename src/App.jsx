@@ -26,7 +26,7 @@ function App() {
   useEffect(() => {
     const intervalID = setInterval(() => {
       setPosition((position + 1) % hashtag.length);
-    }, 3000);
+    }, 2000);
     return () => clearInterval(intervalID);
   }, [position, hashtag.length]);
 
