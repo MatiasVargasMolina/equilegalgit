@@ -48,7 +48,7 @@ function App() {
   right: 0}}>
             <Box
               component="img"
-              src="/wsp.png"
+              src="/wsp3.png"
               width="15%"
               sx={{marginLeft: "auto"}}
               onClick={()=>{redirigirWsp()}}
@@ -56,7 +56,7 @@ function App() {
              <Box
               component="img"
               width="15%"
-              src="/ig.png"
+              src="/ig3.png"
               sx={{marginLeft: "auto"}}
               onClick={()=>{redirigir()}}
             />
