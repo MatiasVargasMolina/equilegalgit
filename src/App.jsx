@@ -6,6 +6,9 @@ function App() {
   function redirigir() {
     window.location.replace("https://www.instagram.com/equidadlegal.cl/");
   }
+  function redirigirWsp() { 
+    window.location.replace("https://wa.me/56971997994/?text=Hola, me podrias enviar mas informacion?");
+  }
 
   return (
     <div className='conteiner'>
@@ -48,6 +51,7 @@ function App() {
               src="/wsp.png"
               width="15%"
               sx={{marginLeft: "auto"}}
+              onClick={()=>{redirigirWsp()}}
             />
              <Box
               component="img"
