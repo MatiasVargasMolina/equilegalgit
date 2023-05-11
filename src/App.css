@@ -6,8 +6,12 @@
   max-height: 100vh;
 }
 @font-face {
-  font-family: 'MiFuente';
+  font-family: 'MiFuente1';
   src: url('/fonts/big_noodle_titling_oblique.ttf');
+}
+@font-face {
+  font-family: 'MiFuente2';
+  src: url('/fonts/big_noodle_titling.ttf');
 }
 .navbar{
   display: flex;
@@ -24,9 +28,11 @@
 .titulo {
   color:white;
   font-size: 10vw;
+  width: 100vw;
   text-align: center;
-  font-family: 'MiFuente';
+  font-family: 'MiFuente2';
   white-space: nowrap;
+  font-weight: 100;
 }
 .container{
   padding: 0;
@@ -53,7 +59,7 @@
 }
 
 .prescribelaw{
-  font-family: 'MiFuente';
+  font-family: 'MiFuente1';
   width: 100%;
   text-align: center;
   padding-top: 20%;

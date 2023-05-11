@@ -1,11 +1,17 @@
 #root{
   padding: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 @font-face {
-  font-family: 'MiFuente';
+  font-family: 'MiFuente1';
+  src: url('./fonts/big_noodle_titling_oblique.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MiFuente2';
   src: url('./fonts/big_noodle_titling.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: lighter;
   font-style: normal;
 }
