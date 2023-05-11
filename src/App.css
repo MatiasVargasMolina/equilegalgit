@@ -46,30 +46,45 @@
 @keyframes cambia-color {
   0% {
     color: #018bd2;
-    text-decoration-color: #018bd2;
   }
   50% {
     color: #1bc2ea;
-    text-decoration-color: #1bc2ea;
   }
   100% {
     color: #046a9b;
-    text-decoration-color: #046c9c;
   }
 }
 
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .prescribelaw{
   font-family: 'MiFuente1';
   width: 100%;
   text-align: center;
   color:#333333;
   animation: cambia-color 5s linear infinite;
+  text-decoration: none;
 }
-@keyframes escribir {
-  from { width: 0 }
-  to { width: 10em }
+.prescribelawTouch{
+  font-family: 'MiFuente1';
+  width: 100%;
+  text-align: center;
+  color:#333333;
+  animation: cambia-color 5s linear infinite;
+  text-decoration: none;
+  animation: zoom 0.2s ease-out;
 }
 a{
   color: black;
   animation: cambia-color 5s linear infinite;
+  text-decoration: none;
 }

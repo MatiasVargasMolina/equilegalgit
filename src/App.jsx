@@ -43,6 +43,7 @@ function App() {
             paddingBottom="10vh"
             sx={{}}
           />
+          <a href="https://www.instagram.com/equidadlegal.cl/" target="_blank"><h1 translate="no" className='prescribelaw'>#FONDOSOLIDARIO</h1></a>
           <a href="https://twitter.com/intent/tweet?text=No%20pagues%20tu%20cae%20enterate%20aqui%20&url=http%3A%2F%2Fequidadlegal.cl&hashtags=programación,html" target="_blank"><h1 translate="no" className='prescribelaw'>#PRESCRIBELAW</h1></a>
           <a href="https://www.instagram.com/equidadlegal.cl/" target="_blank"><h1 translate="no" className='prescribelaw'>#NOMASCAE</h1></a>       
           <Box sx={{paddingTop:"20%",position:"fixed",display:"flex",flexDirection:"column",justifyContent:"space-between",  bottom: 0,
@@ -56,10 +57,12 @@ function App() {
             />
              <Box
               component="img"
-              width="15%"
+              width="10%"
               src="/ig3.png"
               sx={{marginLeft: "auto"}}
               onClick={()=>{redirigir()}}
+              paddingRight="10px"
+
             />
           </Box>
 
