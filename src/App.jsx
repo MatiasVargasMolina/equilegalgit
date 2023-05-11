@@ -67,13 +67,13 @@ function App() {
           />
           <a href={hashtag[position].link} target="_blank"><h1 translate="no" className='prescribelawTouch'>{hashtag[position].nombre} </h1></a>    
           <Box sx={{paddingTop:"20%",position:"fixed",display:"flex",flexDirection:"column",justifyContent:"space-between",  bottom: 0,
-  right: 0}}>
+  right: 0,paddingBottom:1.5,paddingRight:1.5}}>
     <h2 className='prescribelaw2'>Contactanos</h2>
             <Box
               component="img"
               src="/wsp3.png"
               width="15%"
-              sx={{marginLeft: "auto",animation:(touch)? 'heartbeat 2s infinite': "none",userSelect: 'none',}}
+              sx={{marginLeft: "auto",animation: 'heartbeat 2s infinite'}}
               onClick={()=>{redirigirWsp()}}
               onTouchStart={() => {
                 setTouch(true);
@@ -84,6 +84,7 @@ function App() {
             />
              <Box
               component="img"
+              paddingTop="1.5vh"
               width="10%"
               src="/ig3.png"
               sx={{marginLeft: "auto",

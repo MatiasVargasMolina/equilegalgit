@@ -74,13 +74,14 @@
   color:#333333;
   animation: cambia-color 5s linear infinite;
   text-decoration: none;
+  animation: teclear 3s steps(16);
 }
 .prescribelaw2{
   font-family: 'MiFuente1';
   width: 100%;
   text-align: center;
   color:#333333;
-  animation: cambia-color 5s linear infinite;
+  animation: cambia-color 5s linear infinite,teclear 3s steps(17) infinite;
   text-decoration: none;
   position: relative;
   left: 19vw;
