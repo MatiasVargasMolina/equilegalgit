@@ -73,7 +73,7 @@ function App() {
               component="img"
               src="/wsp3.png"
               width="15%"
-              sx={{marginLeft: "auto",animation:(touch)? 'heartbeat 2s infinite': "none"}}
+              sx={{marginLeft: "auto",animation:(touch)? 'heartbeat 2s infinite': "none",userSelect: 'none',}}
               onClick={()=>{redirigirWsp()}}
               onTouchStart={() => {
                 setTouch(true);
