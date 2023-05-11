@@ -62,7 +62,6 @@
   font-family: 'MiFuente1';
   width: 100%;
   text-align: center;
-  padding-top: 20%;
   color:#333333;
   animation: cambia-color 5s linear infinite;
 }
