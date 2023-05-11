@@ -100,3 +100,17 @@ a{
   animation: cambia-color 5s linear infinite;
   text-decoration: none;
 }
+@media (min-width: 992px) {
+  .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar{
+    height: 5rem;
+  }
+  .titulo{
+    font-size: 5rem;
+  }
+}

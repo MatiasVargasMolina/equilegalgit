@@ -9,6 +9,9 @@ function App() {
   function redirigirWsp() { 
     window.location.replace("https://wa.me/56971997994/?text=Hola, me podrias enviar mas informacion?");
   }
+  function pararlogo(){
+    setTouch(true)
+  }
   const [hashtag,setHashtag]=useState([{nombre:"#FONDOSOLIDARIO",link:"https://twitter.com/intent/tweet?text=No%20pagues%20tu%20cae%20enterate%20aqui%20&url=http%3A%2F%2Fequidadlegal.cl&hashtags=programación,html"},{nombre:"#NOMASCAE",link:"https://www.instagram.com/equidadlegal.cl"},{nombre:"#PRESCRIBELAW",link:"https://www.instagram.com/equidadlegal.cl"}]);
   const [position,setPosition]=useState(0);
   const[touch,setTouch]=useState(false);
@@ -23,11 +26,20 @@ function App() {
       transform: 'scale(1)',
     },
   });
-  function cambiar(){
+  function cambiar(nombre){
+    if(nombre=="#FONDOSOLIDARIO"){window.location.replace("https://twitter.com/intent/tweet?text=No%20pagues%20tu%20cae%20enterate%20aqui%20&url=http%3A%2F%2Fequidadlegal.cl&hashtags=programación,html");
   }
+    else if(nombre=="#NOMASCAE"){
+      window.location.replace("https://www.instagram.com/equidadlegal.cl");
+    }
+    else{
+      window.location.replace("https://www.instagram.com/equidadlegal.cl");
+    }
+}
   useEffect(() => {
     const intervalID = setInterval(() => {
       setPosition((position + 1) % hashtag.length);
+      console.log("pase")
     }, 2000);
     return () => clearInterval(intervalID);
   }, [position, hashtag.length]);
@@ -46,15 +58,17 @@ function App() {
               component="img"
               src="/30.png"
               sx={{
-                animation: 'rotate 2s linear infinite',
+                animation: (touch)?"none":'rotate 2s linear infinite',
               '@keyframes rotate': {
                 from: {
                   transform: 'rotate(0deg)',
                 },
                 to: {
                   transform: 'rotate(360deg)',
-                }
-              }}}
+                },
+                '@media (min-width: 1024px)': {
+                  animation: (touch)?"none":'rotate 2s linear infinite',
+                }}}}
             />
       </Box>
         <Box
@@ -65,7 +79,7 @@ function App() {
             paddingBottom="12vh"
             sx={{}}
           />
-          <a href={hashtag[position].link} target="_blank"><h1 translate="no" className='prescribelawTouch'>{hashtag[position].nombre} </h1></a>    
+          <a href={hashtag[position].link} target="_blank"><h1 translate="no" onTouchStart={()=>{cambiar(hashtag[position.nombre])}} className='prescribelawTouch'>{hashtag[position].nombre} </h1></a>    
           <Box sx={{paddingTop:"20%",position:"fixed",display:"flex",flexDirection:"column",justifyContent:"space-between",  bottom: 0,
   right: 0,paddingBottom:1.5,paddingRight:1.5}}>
     <h2 className='prescribelaw2'>Contactanos</h2>
