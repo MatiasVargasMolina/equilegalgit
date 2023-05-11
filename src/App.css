@@ -24,6 +24,7 @@
   justify-content: center; /* Centrar horizontalmente */
   align-items: center;
   position: relative;
+
 }
 .titulo {
   color:white;
@@ -73,6 +74,16 @@
   color:#333333;
   animation: cambia-color 5s linear infinite;
   text-decoration: none;
+}
+.prescribelaw2{
+  font-family: 'MiFuente1';
+  width: 100%;
+  text-align: center;
+  color:#333333;
+  animation: cambia-color 5s linear infinite;
+  text-decoration: none;
+  position: relative;
+  left: 19vw;
 }
 .prescribelawTouch{
   font-family: 'MiFuente1';

@@ -11,17 +11,19 @@ function App() {
   }
   const [hashtag,setHashtag]=useState([{nombre:"#FONDOSOLIDARIO",link:"https://twitter.com/intent/tweet?text=No%20pagues%20tu%20cae%20enterate%20aqui%20&url=http%3A%2F%2Fequidadlegal.cl&hashtags=programación,html"},{nombre:"#NOMASCAE",link:"https://www.instagram.com/equidadlegal.cl"},{nombre:"#PRESCRIBELAW",link:"https://www.instagram.com/equidadlegal.cl"}]);
   const [position,setPosition]=useState(0);
+  const[touch,setTouch]=useState(false);
+  const heartbeat = () => ({
+    '0%': {
+      transform: 'scale(1)',
+    },
+    '50%': {
+      transform: 'scale(1.2)',
+    },
+    '100%': {
+      transform: 'scale(1)',
+    },
+  });
   function cambiar(){
-    console.log(position)
-    if(position==2){
-      setPosition(0);
-    }
-    else if(position==0){
-      setPosition(1)
-    }
-    else if(position==1){
-      setPosition(2)
-    }
   }
   useEffect(() => {
     const intervalID = setInterval(() => {
@@ -60,24 +62,34 @@ function App() {
             src="/equidad1.png"
             width="100%"
             height="100%"
-            paddingBottom="20vh"
+            paddingBottom="12vh"
             sx={{}}
           />
           <a href={hashtag[position].link} target="_blank"><h1 translate="no" className='prescribelawTouch'>{hashtag[position].nombre} </h1></a>    
           <Box sx={{paddingTop:"20%",position:"fixed",display:"flex",flexDirection:"column",justifyContent:"space-between",  bottom: 0,
   right: 0}}>
+    <h2 className='prescribelaw2'>Contactanos</h2>
             <Box
               component="img"
               src="/wsp3.png"
               width="15%"
-              sx={{marginLeft: "auto"}}
+              sx={{marginLeft: "auto",animation:(touch)? 'heartbeat 2s infinite': "none"}}
               onClick={()=>{redirigirWsp()}}
+              onTouchStart={() => {
+                setTouch(true);
+              }}
+              onTouchEnd={() => {
+                setTouch(false);
+              }}
             />
              <Box
               component="img"
               width="10%"
               src="/ig3.png"
-              sx={{marginLeft: "auto"}}
+              sx={{marginLeft: "auto",
+              '&:hover': {
+                animation: `${heartbeat} 2s infinite`,
+              }}}
               onClick={()=>{redirigir()}}
               paddingRight="10px"
 
