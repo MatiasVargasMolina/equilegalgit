@@ -6,7 +6,7 @@
   max-height: 100vh;
 }
 @font-face {
-  font-family: 'MyFont';
+  font-family: 'MiFuente';
   src: url('/fonts/big_noodle_titling_oblique.ttf');
 }
 .navbar{
@@ -22,10 +22,10 @@
   position: relative;
 }
 .titulo {
-  color:#333333;
-  font-size: 5vw;
+  color:white;
+  font-size: 10vw;
   text-align: center;
-  font-family: 'MyFont';
+  font-family: 'MiFuente';
   white-space: nowrap;
 }
 .container{
@@ -37,14 +37,34 @@
   align-items: center;
   position: relative;
 }
+@keyframes cambia-color {
+  0% {
+    color: #018bd2;
+    text-decoration-color: #018bd2;
+  }
+  50% {
+    color: #1bc2ea;
+    text-decoration-color: #1bc2ea;
+  }
+  100% {
+    color: #046a9b;
+    text-decoration-color: #046c9c;
+  }
+}
+
 .prescribelaw{
-  font-family: 'MyFont';
-  width: 100vw;
+  font-family: 'MiFuente';
+  width: 100%;
   text-align: center;
   padding-top: 20%;
-  color:#333333
+  color:#333333;
+  animation: cambia-color 5s linear infinite;
+}
+@keyframes escribir {
+  from { width: 0 }
+  to { width: 10em }
 }
 a{
   color: black;
-  text-decoration-color: #046c9c;
+  animation: cambia-color 5s linear infinite;
 }
