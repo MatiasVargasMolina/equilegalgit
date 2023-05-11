@@ -15,12 +15,15 @@
   border-top: 3px solid #04618c;
   justify-content: center; /* Centrar horizontalmente */
   align-items: center;
+  position: relative;
 }
 .titulo {
   color:white;
-  width: 100vw;
+  font-size: 7vw;
+  white-space: nowrap;
   text-align: center;
   font-family: 'Saira Condensed';
+  white-space: nowrap;
 }
 .container{
   padding: 0;
