@@ -54,6 +54,7 @@ function App() {
       <Box sx={{ display:"flex",  justifyContent: "center",paddingTop:"5vh",paddingBottom:"5vh", /* Centrar horizontalmente */
   alignItems: "center",flexDirection:"column",width:"100vh"}}>
         <Box
+            
               width="50%"
               component="img"
               src="/30.png"
@@ -68,7 +69,8 @@ function App() {
                 },
                 '@media (min-width: 1024px)': {
                   animation: (touch)?"none":'rotate 2s linear infinite',
-                }}}}
+                }}
+              }}
             />
       </Box>
         <Box

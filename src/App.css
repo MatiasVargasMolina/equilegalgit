@@ -83,8 +83,6 @@
   color:#333333;
   animation: cambia-color 5s linear infinite,teclear 3s steps(17) infinite;
   text-decoration: none;
-  position: relative;
-  left: 19vw;
 }
 .prescribelawTouch{
   font-family: 'MiFuente1';
@@ -92,7 +90,7 @@
   text-align: center;
   font-size: 3rem;
   color:#333333;
-  animation: cambia-color 5s linear infinite;
+  animation: cambia-color 5s linear infinite, entrada 3s;
   text-decoration: none;
 }
 a{
@@ -100,6 +98,7 @@ a{
   animation: cambia-color 5s linear infinite;
   text-decoration: none;
 }
+
 @media (min-width: 992px) {
   .container{
     width: 100%;
@@ -113,4 +112,32 @@ a{
   .titulo{
     font-size: 5rem;
   }
+}
+.animacion-entrada-salida {
+  position: relative;
+  animation-duration: 3s;
+}
+
+
+@keyframes salida {
+  from {
+      left: 50%;
+      opacity: 1;
+  }
+  to {
+      left: 100%;
+      opacity: 0;
+  }
+}
+
+.animacion-entrada-salida {
+  animation-name: entrada;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.animacion-entrada-salida:hover {
+  animation-name: salida;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
